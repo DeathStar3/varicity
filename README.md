@@ -1,4 +1,4 @@
-# VariCity
+# VariCity [![Symfinder CI](https://github.com/DeathStar3-projects/varicity-config/actions/workflows/prepare.yml/badge.svg)](https://github.com/DeathStar3-projects/varicity-config/actions/workflows/prepare.yml)
 
 VariCity is a 3D visualization relying on the city metaphor to display zones of high density of variability implementations in a single system.
 The city is built by creating building, corresponding to classes, and streets, grouping every class linked to the street's starting building.
