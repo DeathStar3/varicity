@@ -24,8 +24,9 @@ name: Symfinder CI
 on:
   push:
     branches:
-      - master
+      - main
       - develop
+      - ci
 
 jobs:
   unit_tests:
