@@ -20,7 +20,7 @@
 #
 
   
-name: Symfinder CI
+name: VariCity CI
 on:
   push:
     branches:
