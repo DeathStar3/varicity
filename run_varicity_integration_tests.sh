@@ -38,7 +38,7 @@ cp -r test_projects/* resources/
 docker run --rm --name test_projects_builder -v "$(pwd)/resources":/usr/src/mymaven -w /usr/src/mymaven maven:3-jdk-8 mvn clean compile clean
 
 ./build.sh -DskipTests
-./run.sh --local visibilityTest
+./run.sh --local
 
 docker-compose -f varicity-integration-tests.yaml build
 
