@@ -67,7 +67,35 @@ hierarchy_links:
 blacklist: #all classes that must not appear
 
 api_classes: #all API classes
-  - "JfreeChart"
+  abstract_decorator:
+    - "ChristmasTree"
+  decorator:
+    - "com.iluwatar.decorator.Troll"
+  density:
+    - "Shape"
+    - "Renderer"
+  factory:
+    - "Shape"
+  generic_decorator:
+    - "ChristmasTree"
+    - "TreeDecorator"
+  attribute_composition_factory:
+    - "Dataset"
+    - "Value"
+    - "DefaultPieDataset"
+  generics:
+    - "MyPair"
+  inheritance:
+    - "Superclass"
+  multiple_patterns:
+    - "Shape"
+    - "Factory"
+  strategy:
+    - "Strategy"
+  strategy_with_method_parameter:
+    - "Strategy"
+  template:
+    - "Algorithm"
 
 variables: #variables to be used for width and height of a building
   width: "nbConstructorVariants"
