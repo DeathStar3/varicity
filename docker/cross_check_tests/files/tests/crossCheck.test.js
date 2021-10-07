@@ -29,14 +29,13 @@ describe('cross check', function() {
   });
 
   it('cross check cross_check_1', function() {
-      let entities = new VPVariantsStrategy().parse(FilesLoader.loadDataFile('cross_check_1'), ConfigLoader.loadDataFile("config"));
+      let entities = new VPVariantsStrategy().parse(FilesLoader.loadDataFile('cross_check_1'), ConfigLoader.loadDataFile("config"), "cross_check_1");
       let ent = entities.filterCompLevel(1);
       let dis = ent.district.districts
       let numberOfBuiildings = countBuilding(dis) + countDistricts(dis)
       expect(numberOfBuiildings).toBe(22);
   });
   it('the generated graph should contain 22 nodes', async () => {
-      console.log($('circle').length);
       expect(d3.selectAll('circle').size()).toBe(22); // 14 au lieu de 22
   });
 })

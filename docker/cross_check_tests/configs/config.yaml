@@ -59,7 +59,8 @@ hierarchy_links:
 blacklist: #all classes that must not appear
 
 api_classes: #all API classes
-  - "JfreeChart"
+  cross_check_1:
+    - "JfreeChart"
 
 variables: #variables to be used for width and height of a building
   width: "nbConstructorVariants"

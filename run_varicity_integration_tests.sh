@@ -31,18 +31,18 @@ create_directory(){
     fi
 }
 
-#sed -i -e 's/experiments.yaml/test-experiments.yaml/g' symfinder.yaml
-#create_directory resources
-#cp -r test_projects/* resources/
-#
-#docker run --rm --name test_projects_builder -v "$(pwd)/resources":/usr/src/mymaven -w /usr/src/mymaven maven:3-jdk-8 mvn clean compile clean
-#
-#./build.sh -DskipTests
-#./run.sh --local visibilityTest
+sed -i -e 's/experiments.yaml/test-experiments.yaml/g' symfinder.yaml
+create_directory resources
+cp -r test_projects/* resources/
+
+docker run --rm --name test_projects_builder -v "$(pwd)/resources":/usr/src/mymaven -w /usr/src/mymaven maven:3-jdk-8 mvn clean compile clean
+
+./build.sh -DskipTests
+./run.sh --local visibilityTest
 
 docker-compose -f varicity-integration-tests.yaml build
 
 docker-compose -f varicity-integration-tests.yaml up --abort-on-container-exit --exit-code-from varicity_integration
 docker-compose -f varicity-integration-tests.yaml down
 
-#sed -i -e 's/test-experiments.yaml/experiments.yaml/g' symfinder.yaml
+sed -i -e 's/test-experiments.yaml/experiments.yaml/g' symfinder.yaml
