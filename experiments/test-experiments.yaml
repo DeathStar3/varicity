@@ -1,0 +1,81 @@
+abstract_decorator:
+  localDirectory: abstract_decorator
+  sourcePackage: .
+composition_levels_inheritance:
+  localDirectory: composition_levels_inheritance
+  sourcePackage: .
+composition_levels_mixed:
+  localDirectory: composition_levels_mixed
+  sourcePackage: .
+cross_check_1:
+  localDirectory: cross_check_1
+  sourcePackage: .
+decorator:
+  localDirectory: decorator
+  sourcePackage: .
+density:
+  localDirectory: density
+  sourcePackage: .
+factory:
+  localDirectory: factory
+  sourcePackage: .
+generic_decorator:
+  localDirectory: generic_decorator
+  sourcePackage: .
+attribute_composition:
+  localDirectory: attribute_composition
+  sourcePackage: .
+attribute_composition_factory:
+  localDirectory: attribute_composition_factory
+  sourcePackage: .
+generics:
+  localDirectory: generics
+  sourcePackage: .
+inheritance:
+  localDirectory: inheritance
+  sourcePackage: .
+import_from_different_package:
+  localDirectory: import_from_different_package
+  sourcePackage: .
+import_from_different_package_all_package_imported:
+  localDirectory: import_from_different_package_all_package_imported
+  sourcePackage: .
+inner_class:
+  localDirectory: inner_class
+  sourcePackage: .
+inner_class_before_fields:
+  localDirectory: inner_class_before_fields
+  sourcePackage: .
+metrics:
+  localDirectory: metrics
+  sourcePackage: .
+multiple_patterns:
+  localDirectory: multiple_patterns
+  sourcePackage: .
+multiple_vp:
+  localDirectory: multiple_vp
+  sourcePackage: .
+strategy:
+  localDirectory: strategy
+  sourcePackage: .
+strategy_with_method_parameter:
+  localDirectory: strategy_with_method_parameter
+  sourcePackage: .
+structures:
+  localDirectory: structures
+  sourcePackage: .
+template:
+  localDirectory: template
+  sourcePackage: .
+vps_and_variants:
+  localDirectory: vps_and_variants
+  sourcePackage: .
+vps_in_different_packages:
+  localDirectory: vps_in_different_packages
+  sourcePackage: .
+visibilityTest:
+  localDirectory: visibilityTest
+  sourcePackage: .
+  compositionLevel: 4
+  compositionType: IN
+

@@ -1,0 +1,316 @@
+{
+    "nodes": [
+      {
+        "types": [
+          "CLASS",
+          "PUBLIC",
+          "VARIANT"
+        ],
+        "constructorVPs": 0,
+        "methods": [
+          {
+            "name": "decorateWithBubbleLights",
+            "number": 1
+          },
+          {
+            "name": "decorate",
+            "number": 1
+          }
+        ],
+        "allMethods": 2,
+        "constructors": [
+          {
+            "name": "BubbleLights",
+            "number": 1
+          }
+        ],
+        "publicConstructors": 1,
+        "methodVariants": 0,
+        "methodVPs": 0,
+        "publicMethods": 1,
+        "constructorVariants": 0,
+        "name": "BubbleLights",
+        "attributes": [],
+        "nbCompositions": 1
+      },
+      {
+        "constructors": [],
+        "types": [
+          "INTERFACE",
+          "PUBLIC",
+          "STRATEGY",
+          "VP",
+          "COMPOSITION_STRATEGY"
+        ],
+        "methods": [
+          {
+            "name": "decorate",
+            "number": 1
+          }
+        ],
+        "name": "ChristmasTree",
+        "attributes": [
+          {
+            "name": "TreeDecorator",
+            "number": 1
+          },
+          {
+            "name": "ChristmasTreeImpl",
+            "number": 1
+          }
+        ]
+      },
+      {
+        "constructors": [],
+        "publicConstructors": 0,
+        "types": [
+          "CLASS",
+          "PUBLIC",
+          "VARIANT"
+        ],
+        "constructorVPs": 0,
+        "methodVariants": 0,
+        "methods": [
+          {
+            "name": "decorate",
+            "number": 1
+          }
+        ],
+        "methodVPs": 0,
+        "publicMethods": 1,
+        "constructorVariants": 0,
+        "name": "ChristmasTreeImpl",
+        "attributes": [],
+        "allMethods": 1
+      },
+      {
+        "types": [
+          "CLASS",
+          "PUBLIC",
+          "ABSTRACT",
+          "DECORATOR",
+          "VP",
+          "VARIANT"
+        ],
+        "constructorVPs": 0,
+        "methods": [
+          {
+            "name": "decorate",
+            "number": 1
+          }
+        ],
+        "allMethods": 1,
+        "constructors": [
+          {
+            "name": "TreeDecorator",
+            "number": 1
+          }
+        ],
+        "publicConstructors": 1,
+        "methodVariants": 0,
+        "methodVPs": 0,
+        "publicMethods": 1,
+        "constructorVariants": 0,
+        "name": "TreeDecorator",
+        "attributes": [
+          {
+            "name": "BubbleLights",
+            "number": 1
+          }
+        ],
+        "nbCompositions": 1
+      }
+    ],
+    "links": [
+      {
+        "type": "IMPLEMENTS",
+        "source": "ChristmasTree",
+        "target": "TreeDecorator"
+      },
+      {
+        "type": "IMPLEMENTS",
+        "source": "ChristmasTree",
+        "target": "ChristmasTreeImpl"
+      },
+      {
+        "type": "EXTENDS",
+        "source": "TreeDecorator",
+        "target": "BubbleLights"
+      }
+    ],
+    "allnodes": [
+      {
+        "types": [
+          "CLASS",
+          "PUBLIC",
+          "VARIANT"
+        ],
+        "constructorVPs": 0,
+        "methods": [
+          {
+            "name": "decorateWithBubbleLights",
+            "number": 1
+          },
+          {
+            "name": "decorate",
+            "number": 1
+          }
+        ],
+        "interfaceAttributes": [
+          {
+            "name": "ChristmasTree",
+            "number": 1
+          }
+        ],
+        "allMethods": 2,
+        "constructors": [
+          {
+            "name": "BubbleLights",
+            "number": 1
+          }
+        ],
+        "publicConstructors": 1,
+        "methodVariants": 0,
+        "methodVPs": 0,
+        "publicMethods": 1,
+        "constructorVariants": 0,
+        "name": "BubbleLights",
+        "attributes": [],
+        "nbCompositions": 1
+      },
+      {
+        "constructors": [],
+        "types": [
+          "INTERFACE",
+          "PUBLIC",
+          "STRATEGY",
+          "VP",
+          "COMPOSITION_STRATEGY"
+        ],
+        "methods": [
+          {
+            "name": "decorate",
+            "number": 1
+          }
+        ],
+        "name": "ChristmasTree",
+        "attributes": [
+          {
+            "name": "TreeDecorator",
+            "number": 1
+          },
+          {
+            "name": "ChristmasTreeImpl",
+            "number": 1
+          }
+        ],
+        "interfaceAttributes": []
+      },
+      {
+        "types": [
+          "CLASS",
+          "PUBLIC",
+          "VARIANT"
+        ],
+        "constructorVPs": 0,
+        "methods": [
+          {
+            "name": "decorate",
+            "number": 1
+          }
+        ],
+        "interfaceAttributes": [],
+        "allMethods": 1,
+        "constructors": [],
+        "publicConstructors": 0,
+        "methodVariants": 0,
+        "methodVPs": 0,
+        "publicMethods": 1,
+        "constructorVariants": 0,
+        "name": "ChristmasTreeImpl",
+        "attributes": []
+      },
+      {
+        "types": [
+          "CLASS",
+          "PUBLIC",
+          "ABSTRACT",
+          "DECORATOR",
+          "VP",
+          "VARIANT"
+        ],
+        "constructorVPs": 0,
+        "methods": [
+          {
+            "name": "decorate",
+            "number": 1
+          }
+        ],
+        "interfaceAttributes": [
+          {
+            "name": "ChristmasTree",
+            "number": 1
+          }
+        ],
+        "allMethods": 1,
+        "constructors": [
+          {
+            "name": "TreeDecorator",
+            "number": 1
+          }
+        ],
+        "publicConstructors": 1,
+        "methodVariants": 0,
+        "methodVPs": 0,
+        "publicMethods": 1,
+        "constructorVariants": 0,
+        "name": "TreeDecorator",
+        "attributes": [
+          {
+            "name": "BubbleLights",
+            "number": 1
+          }
+        ],
+        "nbCompositions": 1
+      }
+    ],
+    "linkscompose": [
+      {
+        "type": "INSTANTIATE",
+        "source": "BubbleLights",
+        "target": "ChristmasTree"
+      },
+      {
+        "type": "INSTANTIATE",
+        "source": "TreeDecorator",
+        "target": "ChristmasTree"
+      }
+    ],
+    "alllinks": [
+      {
+        "type": "EXTENDS",
+        "source": "TreeDecorator",
+        "target": "BubbleLights"
+      },
+      {
+        "type": "INSTANTIATE",
+        "source": "TreeDecorator",
+        "target": "ChristmasTree"
+      },
+      {
+        "type": "INSTANTIATE",
+        "source": "BubbleLights",
+        "target": "ChristmasTree"
+      },
+      {
+        "type": "IMPLEMENTS",
+        "source": "ChristmasTree",
+        "target": "ChristmasTreeImpl"
+      },
+      {
+        "type": "IMPLEMENTS",
+        "source": "ChristmasTree",
+        "target": "TreeDecorator"
+      }
+    ]
+  }

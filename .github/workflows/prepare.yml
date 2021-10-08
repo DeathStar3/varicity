@@ -1,0 +1,69 @@
+#
+# This file is part of symfinder.
+#
+# symfinder is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Lesser General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# symfinder is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public License
+# along with symfinder. If not, see <http://www.gnu.org/licenses/>.
+#
+# Copyright 2018-2021 Johann Mortara <johann.mortara@univ-cotedazur.fr>
+# Copyright 2018-2021 Xhevahire Tërnava <t.xheva@gmail.com>
+# Copyright 2018-2021 Philippe Collet <philippe.collet@univ-cotedazur.fr>
+#
+
+  
+name: Symfinder CI
+on:
+  push:
+    branches:
+      - master
+      - develop
+
+jobs:
+  unit_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Building symfinder engine
+        run: docker build -f docker/symfinder/Dockerfile -t deathstar3/symfinder-engine:local .
+      - name: Building sources fetcher
+        run: docker build -f docker/sources_fetcher/Dockerfile -t deathstar3/symfinder-fetcher:local .
+      - name: Building symfinder runner
+        run: docker build -f docker/runner/Dockerfile -t deathstar3/symfinder-runner:local .
+      - name: Building Neo4j procedures
+        run: docker build -f docker/neo4j/Dockerfile -t deathstar3/symfinder-neo4j:local .
+      - name: Visualization unit tests
+        run: ./run_visualization_tests.sh
+
+  integration_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Tests on sample projects
+        run: ./run_integration_tests.sh
+      - name: Acceptance tests on a pilot project
+        run: ./run_acceptance_tests.sh sat4j
+
+  varcity_project:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Varicity unit tests
+        run: chmod +x ./run_varicity_unit_tests.sh && ./run_varicity_unit_tests.sh
+      - name: Varicity integration tests
+        run: chmod +x ./run_varicity_integration_tests.sh && ./run_varicity_integration_tests
+        
+  cross_check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Cross check test between varicity and symfindercomp
+        run: chmod +x ./run_cross_check_tests.sh && ./run_cross_check_tests.sh

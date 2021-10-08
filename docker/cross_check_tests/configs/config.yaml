@@ -1,0 +1,70 @@
+# config file for varicity
+# you may alter this file before running the program
+# pick your color at https://htmlcolorcodes.com/
+
+building:
+  padding: 0.2
+  colors:
+    faces: # ordered by importance, descending : in case of conflict, the first color to match will be displayed
+      - name: "!HOTSPOT"
+        color: "#555555"
+      - name: "VP"
+        color: "#FF6F33"
+      - name: "STRATEGY"
+        color: "#17202a" # black
+      - name: "FACTORY"
+        color: "#7d3c98" # purple
+      - name: "INTERFACE"
+        color: "#e67e22" # orange
+      - name: "ABSTRACT"
+        color: "#2c3e50" # dark blue
+      - name: "CLASS"
+        color: "#335DFF"
+
+    edges:
+      - name: "API"
+        color: "#000000"
+
+    outlines:
+
+district:
+  padding: 0
+  colors:
+    faces:
+      - name: "PACKAGE"
+        color: "#801A2E"
+      - name: "VP"
+        color: "#1A8039"
+
+link:
+  colors:
+    - name: "IMPLEMENTS"
+      color: "#ef2222"
+    - name: "EXTENDS"
+      color: "#3f97ff"
+    - name: "DUPLICATES"
+      color: "#2B914A"
+    - name: "INSTANTIATE"
+      color: "#1A8039"
+  display:
+    air_traffic:
+      - "IMPLEMENTS"
+      - "EXTENDS"
+    underground_road:
+      - "INSTANTIATE"
+
+hierarchy_links:
+  - "INSTANTIATE"
+
+blacklist: #all classes that must not appear
+
+api_classes: #all API classes
+  - "JfreeChart"
+
+variables: #variables to be used for width and height of a building
+  width: "nbConstructorVariants"
+  height: "nbMethodVariants"
+
+orientation: "IN_OUT"
+
+default_level: 1

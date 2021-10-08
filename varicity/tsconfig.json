@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "outDir": "./built",
+    "target": "es5",
+    "module": "commonjs",
+    "noResolve": false,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "downlevelIteration": true,
+    "moduleResolution": "node",
+    "preserveConstEnums": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "node",
+      "webpack-env",
+      "mocha"
+    ],
+    "lib": [
+      "dom",
+      "es5",
+      "es2015.collection",
+      "es2015.iterable"
+    ],
+  },
+  "include": [
+    "./src",
+    "./tests"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
+  ],
+  "filesGlob": [
+    "./src/**/*.ts",
+    "./tests/*.ts",
+    "./typings/index.d.ts",
+    "./custom_typings/**/*.d.ts",
+    "./node_modules/@types/**/*.d.ts"
+  ],
+}

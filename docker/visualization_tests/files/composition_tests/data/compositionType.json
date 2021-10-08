@@ -1,0 +1,222 @@
+{
+  "nodes": [
+    {
+      "constructors": [],
+      "types": [
+        "INTERFACE",
+        "PUBLIC",
+        "VP"
+      ],
+      "methods": [],
+      "name": "C",
+      "attributes": []
+    }
+  ],
+  "links": [],
+  "allnodes": [
+    {
+      "types": [
+        "CLASS",
+        "PUBLIC"
+      ],
+      "constructorVPs": 0,
+      "methods": [],
+      "interfaceAttributes": [],
+      "allMethods": 0,
+      "constructors": [
+        {
+          "name": "A",
+          "number": 1
+        }
+      ],
+      "publicConstructors": 1,
+      "methodVariants": 0,
+      "methodVPs": 0,
+      "publicMethods": 0,
+      "constructorVariants": 0,
+      "name": "A",
+      "attributes": [
+        {
+          "name": "B",
+          "number": 1
+        }
+      ],
+      "nbCompositions": 1
+    },
+    {
+      "types": [
+        "CLASS",
+        "PUBLIC"
+      ],
+      "constructorVPs": 0,
+      "methods": [
+        {
+          "name": "printA",
+          "number": 1
+        },
+        {
+          "name": "dclass",
+          "number": 1
+        }
+      ],
+      "interfaceAttributes": [
+        {
+          "name": "C",
+          "number": 1
+        }
+      ],
+      "allMethods": 2,
+      "constructors": [
+        {
+          "name": "D",
+          "number": 1
+        }
+      ],
+      "publicConstructors": 1,
+      "methodVariants": 0,
+      "methodVPs": 0,
+      "publicMethods": 2,
+      "constructorVariants": 0,
+      "name": "D",
+      "attributes": [
+        {
+          "name": "A",
+          "number": 1
+        },
+        {
+          "name": "B",
+          "number": 1
+        }
+      ],
+      "nbCompositions": 3
+    },
+    {
+      "constructors": [],
+      "types": [
+        "INTERFACE",
+        "PUBLIC",
+        "VP"
+      ],
+      "methods": [],
+      "name": "C",
+      "attributes": [],
+      "interfaceAttributes": []
+    },
+    {
+      "types": [
+        "CLASS",
+        "PUBLIC"
+      ],
+      "constructorVPs": 0,
+      "methods": [],
+      "interfaceAttributes": [],
+      "allMethods": 0,
+      "constructors": [
+        {
+          "name": "B",
+          "number": 1
+        }
+      ],
+      "publicConstructors": 1,
+      "methodVariants": 0,
+      "methodVPs": 0,
+      "publicMethods": 0,
+      "constructorVariants": 0,
+      "name": "B",
+      "attributes": []
+    },
+    {
+      "types": [
+        "CLASS",
+        "OUT_OF_SCOPE"
+      ],
+      "constructorVPs": 0,
+      "methods": [],
+      "interfaceAttributes": [],
+      "allMethods": 0,
+      "constructors": [],
+      "publicConstructors": 0,
+      "methodVariants": 0,
+      "methodVPs": 0,
+      "publicMethods": 0,
+      "constructorVariants": 0,
+      "name": "java.lang.Object",
+      "attributes": [
+        {
+          "name": "B",
+          "number": 1
+        },
+        {
+          "name": "D",
+          "number": 1
+        },
+        {
+          "name": "A",
+          "number": 1
+        }
+      ]
+    },
+    {
+      "types": [
+        "CLASS",
+        "OUT_OF_SCOPE"
+      ],
+      "constructorVPs": 0,
+      "methods": [],
+      "interfaceAttributes": [],
+      "allMethods": 0,
+      "constructors": [],
+      "publicConstructors": 0,
+      "methodVariants": 0,
+      "methodVPs": 0,
+      "publicMethods": 0,
+      "constructorVariants": 0,
+      "name": "java.io.PrintStream",
+      "attributes": []
+    }
+  ],
+  "linkscompose": [
+    {
+      "type": "INSTANTIATE",
+      "source": "A",
+      "target": "B"
+    },
+    {
+      "type": "INSTANTIATE",
+      "source": "D",
+      "target": "A"
+    },
+    {
+      "type": "INSTANTIATE",
+      "source": "D",
+      "target": "C"
+    },
+    {
+      "type": "INSTANTIATE",
+      "source": "D",
+      "target": "B"
+    }
+  ],
+  "alllinks": [
+    {
+      "type": "INSTANTIATE",
+      "source": "D",
+      "target": "A"
+    },
+    {
+      "type": "INSTANTIATE",
+      "source": "D",
+      "target": "C"
+    },
+    {
+      "type": "INSTANTIATE",
+      "source": "D",
+      "target": "B"
+    },
+    {
+      "type": "INSTANTIATE",
+      "source": "A",
+      "target": "B"
+    }
+  ]
+}

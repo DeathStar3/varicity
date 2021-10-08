@@ -1,0 +1,3 @@
+cross_check_1:
+  localDirectory: cross_check_1
+  sourcePackage: .

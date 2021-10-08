@@ -1,0 +1,102 @@
+/*#ui_square {*/
+/*    position: absolute;*/
+/*    left: 20%;*/
+/*    top: 78%;*/
+/*    width: 60%;*/
+/*    height: 20%;*/
+/*    background: rgba(0,50,80,0.7);*/
+/*}*/
+
+.overflowable {
+    overflow: auto;
+}
+
+/* #project_selector {
+    position: absolute;
+    left: 20%;
+    top: 2%;
+    width: 60%;
+    height: 20%;
+    background: rgba(0,50,80,0.7);
+    color: white;
+    font-family: "Roboto Light", serif;
+    display: flex;
+}
+
+#metricity {
+    float: left;
+    width: 50%;
+}
+
+#evostreet {
+    float: right;
+    width: 50%;
+} */
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+#gameCanvas {
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+
+#console {
+    float: right;
+    width: 30%;
+    height: 100%;
+    border: 5px black;
+}
+
+div {
+    padding-top: 10px;
+}
+
+input {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.parent {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: lightgrey;
+    border: 2px lightgrey solid;
+    cursor: pointer;
+}
+
+.child {
+    width: auto;
+    padding-left: inherit;
+    padding-right: inherit;
+    background-color: white;
+    border: 1px black solid;
+    cursor: auto;
+}
+
+#right-input {
+    float: right;
+    width: 50%;
+}
+
+#reset_camera {
+    color: black;
+}
+
+/* #nodes_details {
+    color: white;
+    font-family: "Roboto Light", serif;
+} */
+
+html {
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    height: 100%;
+}

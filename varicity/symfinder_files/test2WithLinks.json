@@ -1,0 +1,81 @@
+{
+    "nodes": [
+        {
+            "types": ["CLASS"],
+            "name":"fr.polytech.varicity.class1",
+            "methodVariants": 5,
+            "constructorVariants": 10,
+            "nbAttributes": 5,
+            "attributes": [
+                {
+                  "name": "fr.polytech.varicity.class2",
+                  "number": 1
+                }
+            ]
+        },
+        {
+            "types": ["CLASS"],
+            "name":"fr.polytech.varicity.class2",
+            "methodVariants": 5,
+            "constructorVariants": 10,
+            "nbAttributes": 5,
+            "attributes": [
+                {
+                  "name": "fr.polytech.varicity.class1",
+                  "number": 1
+                }
+            ]
+        },
+        {
+            "types": ["CLASS"],
+            "name":"fr.polytech.d3.class1",
+            "methodVariants": 5,
+            "constructorVariants": 10,
+            "nbAttributes": 5,
+            "attributes": [
+                {
+                  "name": "fr.polytech.d3.class2",
+                  "number": 1
+                }
+            ]
+        },
+        {
+            "types": ["CLASS"],
+            "name":"fr.polytech.d3.class2",
+            "methodVariants": 5,
+            "constructorVariants": 10,
+            "nbAttributes": 5,
+            "attributes": [
+                {
+                  "name": "fr.polytech.d3.class1",
+                  "number": 1
+                }
+            ]
+        },
+        {
+            "types": ["CLASS"],
+            "name":"fr.polytech.d3.class3",
+            "methodVariants": 5,
+            "constructorVariants": 10,
+            "nbAttributes": 5,
+            "attributes": [
+                {
+                  "name": "fr.polytech.varicity.class1",
+                  "number": 1
+                }
+            ]
+        }
+    ],
+    "links": [
+        {
+            "source":"fr.polytech.varicity.class1",
+            "target":"fr.polytech.varicity.class2",
+            "type": "EXTENDS"
+        },
+        {
+            "source":"fr.polytech.d3.class3",
+            "target":"fr.polytech.varicity.class3",
+            "type": "EXTENDS"
+        }
+    ]
+}
